@@ -7,7 +7,10 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "script-src": ["https://cdn.ckeditor.com"],
+          "script-src": [
+            "https://cdn.ckeditor.com",
+            "https://cdbc-api.onrender.com",
+          ],
           "connect-src": ["https://proxy-event.ckeditor.com"],
         },
       },
