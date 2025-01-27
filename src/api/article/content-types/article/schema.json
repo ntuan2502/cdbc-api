@@ -66,6 +66,9 @@
     "number": {
       "type": "integer",
       "required": true
+    },
+    "time": {
+      "type": "datetime"
     }
   }
 }
