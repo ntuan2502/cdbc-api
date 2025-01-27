@@ -69,6 +69,17 @@
     },
     "time": {
       "type": "datetime"
+    },
+    "update": {
+      "type": "datetime"
+    },
+    "likes": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "reads": {
+      "type": "biginteger",
+      "default": "0"
     }
   }
 }

@@ -432,6 +432,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 80;
       }>;
+    likes: Schema.Attribute.BigInteger & Schema.Attribute.DefaultTo<'0'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -440,9 +441,11 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     number: Schema.Attribute.Integer & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    reads: Schema.Attribute.BigInteger & Schema.Attribute.DefaultTo<'0'>;
     slug: Schema.Attribute.UID<'title'>;
     time: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
+    update: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
