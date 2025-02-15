@@ -10,6 +10,7 @@ export default [
           "script-src": [
             "https://cdn.ckeditor.com",
             "https://cdbc-api.onrender.com",
+            "https://api.tun.io.vn",
           ],
           "connect-src": ["https://proxy-event.ckeditor.com"],
         },
